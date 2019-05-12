@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo edit</title>
+</head>
+<body>
+    <h1>edit weibo</h1>
+    <form action="/weibo/update" method="post">
+        <input hidden="hidden" name="id" placeholder="id" value="{{ weibo.id }}">
+        <br>
+        <input name="content" placeholder="content" value="{{ weibo.content }}">
+        <br>
+        <button>submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>register page</title>
+    <link rel="icon" href="/static?file=favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/static?file=favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet"
+          href="https://unpkg.com/purecss@0.6.1/build/pure-min.css"
+          integrity="sha384-CCTZv2q9I9m3UOxRLaJneXrrqKwUNOzZ6NGEUMwHtShDJ+nCoiXJCAgi05KfkLGY"
+          crossorigin="anonymous"
+    >
+    <style type="text/css">
+        body {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Register</h1>
+    <form class="pure-form pure-form-stacked" action="/user/register" method="post">
+
+        <label for="username">username</label>
+        <input type="text" name="username" placeholder="username">
+
+        <label for="password">password</label>
+        <input type="text" name="password" placeholder="password">
+
+        <label for="note">note</label>
+        <input type="text" name="note" placeholder="note">
+
+        <button type="submit" class="pure-button pure-button-primary">register</button>
+    </form>
+    <h3>{{result}}</h3>
+    <a href="/">return</a>
+</body>
+</html>
